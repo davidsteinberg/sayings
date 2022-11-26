@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sayings/static/css/main.9aedb5ce.css",
-    "main.js": "/sayings/static/js/main.ab3aeb3c.js",
-    "index.html": "/sayings/index.html",
-    "main.9aedb5ce.css.map": "/sayings/static/css/main.9aedb5ce.css.map",
-    "main.ab3aeb3c.js.map": "/sayings/static/js/main.ab3aeb3c.js.map"
+    "main.css": "./static/css/main.086dfd46.css",
+    "main.js": "./static/js/main.d2265cd9.js",
+    "index.html": "./index.html",
+    "main.086dfd46.css.map": "./static/css/main.086dfd46.css.map",
+    "main.d2265cd9.js.map": "./static/js/main.d2265cd9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9aedb5ce.css",
-    "static/js/main.ab3aeb3c.js"
+    "static/css/main.086dfd46.css",
+    "static/js/main.d2265cd9.js"
   ]
 }

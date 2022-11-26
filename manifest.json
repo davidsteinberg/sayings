@@ -1,6 +1,6 @@
 {
-  "short_name": "As they say",
   "name": "As they say",
+  "description": "Random saying generator that parses and combines existing idioms and aphorisms",
   "icons": [
     {
       "src": "favicon.ico",
