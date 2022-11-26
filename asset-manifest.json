@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sayings/static/css/main.8405ffcd.css",
+    "main.js": "/sayings/static/js/main.b6cc5dc3.js",
+    "index.html": "/sayings/index.html",
+    "main.8405ffcd.css.map": "/sayings/static/css/main.8405ffcd.css.map",
+    "main.b6cc5dc3.js.map": "/sayings/static/js/main.b6cc5dc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8405ffcd.css",
+    "static/js/main.b6cc5dc3.js"
+  ]
+}
