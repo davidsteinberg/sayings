@@ -1,0 +1,20 @@
+{
+  "name": "As they say",
+  "description": "Random saying generator that parses and combines existing idioms and aphorisms",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "128x128 256x256 512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

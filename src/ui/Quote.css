@@ -1,0 +1,33 @@
+.Quote {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-foreground);
+}
+
+.Quote > figure {
+  width: 100%;
+  max-width: var(--width-max);
+  margin: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.Quote > figure > blockquote {
+  margin: 0;
+  text-align: left;
+}
+
+.Quote > figure > blockquote > .text {
+  margin: 0;
+  font-size: var(--font-size-saying);
+}
+
+.Quote > figure > figcaption {
+  margin-top: 1rem;
+  text-align: right;
+  font-size: var(--font-size-author);
+  font-style: italic;
+  opacity: 0.85;
+}

@@ -1,0 +1,61 @@
+.About {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--color-background);
+  transition-property: left;
+  transition-duration: var(--duration-about);
+}
+
+.About.hidden {
+  left: -100%;
+  overflow: hidden;
+}
+
+.About > .header {
+  text-align: center;
+  font-size: calc(var(--font-size-saying) * 0.7);
+}
+
+.About > .text {
+  width: calc(100% - 2rem);
+  max-width: var(--width-max);
+  margin: auto;
+  padding: 1rem;
+  padding-top: 0;
+  text-align: left;
+  font-size: var(--font-size-author);
+}
+
+.About > .text > p > .title {
+  font-weight: bold;
+}
+
+.About a {
+  color: var(--color-foreground);
+}
+
+.About > .text > ul {
+  list-style-type: none;
+}
+
+.About > .text > p > .emphasis,
+.About > .text > .pos-list > li > span {
+  font-weight: bold;
+}
+
+/* || Reduced motion */
+
+@media (prefers-reduced-motion) {
+  .About {
+    display: block;
+    transition-duration: 0s;
+  }
+
+  .About.hidden {
+    display: none;
+    left: 0;
+  }
+}

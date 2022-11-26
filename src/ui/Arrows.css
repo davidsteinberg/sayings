@@ -1,0 +1,71 @@
+.Arrows {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--arrow-column-gap);
+  opacity: 0.7;
+}
+
+.Arrows > .Arrow {
+  position: relative;
+  flex-grow: 1;
+}
+
+.Arrows > .Arrow.disabled,
+.Arrows > .Arrow.pressed {
+  opacity: 0.2;
+}
+
+/* || Image/container */
+.Arrows > .Arrow > .img-container {
+  position: relative;
+  width: 0;
+  height: var(--arrow-img-height);
+  border-bottom: 1px solid black;
+  font-size: calc(0.7 * var(--font-size-author));
+  transition-property: width;
+  transition-duration: var(--duration-arrows);
+  cursor: pointer;
+}
+
+.Arrows > .Arrow.disabled > .img-container {
+  cursor: none;
+}
+
+.Arrows > .Arrow.loaded > .img-container,
+.Arrows > .Arrow.errored > .img-container {
+  width: 100%;
+}
+
+.Arrows > .Arrow > .img-container > img {
+  position: absolute;
+  height: var(--arrow-img-height);
+  bottom: var(--arrow-img-top);
+}
+
+/* || Forward */
+.Arrows > .Arrow.forward > .img-container {
+  position: absolute;
+  right: 0;
+}
+
+.Arrows > .Arrow.forward > .img-container > img {
+  left: 0;
+}
+
+/* || Back */
+.Arrows > .Arrow.back.loaded > .img-container > img {
+  transform: rotateY(180deg);
+}
+
+.Arrows > .Arrow.back > .img-container > img {
+  right: 0;
+}
+
+/* || Reduced motion */
+
+@media (prefers-reduced-motion) {
+  .Arrows > .Arrow > .img-container {
+    transition-duration: 0s;
+  }
+}
